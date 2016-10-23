@@ -1,0 +1,160 @@
+#acceptedTypes {
+	width: 70%;
+	margin: auto;	
+}
+
+
+#termsDiv{
+	display: none;
+	border: 1px solid;
+	padding: 10px;
+	line-height: 1em;
+	font-size: small;
+}
+
+#termsDiv h2{
+	text-align: center;
+}
+
+#termsDiv li, #termsDiv p{
+	font-size: small;
+}
+
+#termsLink {
+	font-size: medium;
+}
+
+/*Fixes float on "Contribute anonymously checkbox */
+.form div.inputs label{
+	width: auto;
+	float:none;
+}
+
+/* Hides "Select One" in the options array for Type Buttons */
+.contributionTypeTab:first-child{
+	display: none;
+}
+
+
+
+
+/*Styles for Item-type list and the contribution breadcrumbs*/
+.contributionTypeTabs, .form-headings{
+	margin: 20px;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	text-decoration: none;
+	
+}
+
+.contributionTypeTab {
+	margin-top: 20px;
+	white-space: nowrap;
+}
+
+.form-headings{
+	border-top: 1px dotted #00458c;
+	border-bottom: 1px dotted #00458c;
+}
+
+.contributionTypeTabs li{
+	display: inline-block;
+	font-size: 12pt;
+	text-decoration: none;
+	
+}
+
+.form-headings li {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 15px;
+	margin-bottom: 3px;
+	font-size: 9pt;
+}
+
+.form-headings li.arrow {
+	margin-top: 2px;
+}
+
+.contributionTypeTabs a, .form-headings a{
+	text-decoration: none;
+	padding: 10px;
+	margin: 2px;
+	font-weight: bold;
+	background-color:#337ab7;
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	color:#ffffff;
+	white-space: nowrap;
+}
+
+.contributionTypeTabs a:focus, .form-headings a:focus {
+	text-decoration: none;
+}
+
+.contributionTypeTabs a:hover, .form-headings a:hover, .contributionTypeTabs a.selected, .form-headings a.currentCrossLink{
+	background-color: #404040;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+
+/*For the message when a user does not check off agreeing to terms*/
+.warning{
+	color:red;
+	margin: 0;
+	padding: 0;
+}
+
+div#contribution-type-form div.inputs {
+	width: 60%;
+	
+}
+
+div#location_form {
+	margin-top: 12px;
+}
+
+#contribution-confirm-submit p{
+	margin: 10px 0px 0px 0px;
+}
+
+/* User Profiles integration */
+
+h2.contribution-userprofile  {
+	margin-bottom: 3px;
+}
+
+.contribution-userprofile-visibility {
+	cursor: pointer;
+}
+
+p#contribution-userprofile-visibility {
+	margin: 2px;
+}
+
+div.contribution-userprofile.exists {
+	display: none;
+}
+
+@media screen and (max-width: 40em){
+	
+	
+	
+	.form-headings li{
+		display: none;
+	}
+	
+	.form-headings a{
+		display: block;
+		text-decoration: none;
+	}
+	
+	li.arrow{
+		display:none;	
+		margin: 0;
+}
+}
